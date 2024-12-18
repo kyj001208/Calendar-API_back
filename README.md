@@ -21,7 +21,6 @@ React.js 프론트엔드와 RESTful API로 통신하며, 데이터를 MySQL 데�
    ```bash
    git clone https://github.com/kyj001208/Calendar-API_back.git
    
-   
 ### 2.3 **MySQL 데이터베이스 설정**
 
 **아래의 스키마를 생성합니다**
