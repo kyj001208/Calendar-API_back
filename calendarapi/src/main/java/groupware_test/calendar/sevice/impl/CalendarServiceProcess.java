@@ -65,11 +65,11 @@ public class CalendarServiceProcess implements CalendarService {
 
 	@Override
 	public void updateProcess(long id, CalendarUpdateDto dto) {
-	    // ID를 기준으로 엔티티 조회
+	    
 	    CalendarEntity entity = repository.findById(id)
 	        .orElseThrow(() -> new IllegalArgumentException("해당 일정이 존재하지 않습니다. ID: " + id));
 
-	    // 엔티티의 기존 값을 DTO에서 받은 값으로 새롭게 업데이트
+	    
 	    CalendarEntity updatedEntity = entity.toBuilder()  // toBuilder()를 사용하여 기존 객체 기반으로 빌더 생성
 	        .title(dto.getTitle())  // 새로 받은 값으로 설정
 	        .description(dto.getDescription())
