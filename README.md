@@ -27,7 +27,6 @@ React.js 프론트엔드와 RESTful API로 통신하며, 데이터를 MySQL 데�
    ```bash
    CREATE DATABASE calendar_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-
 **기본 사용자와 비밀번호 설정(변경 시 application.properties에 반영)**
   
     spring.datasource.url: jdbc:mysql://localhost:3306/calendar_db
