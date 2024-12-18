@@ -12,8 +12,7 @@ import groupware_test.entity.CalendarEntity;
 @Repository
 public interface CalendarRepository extends JpaRepository<CalendarEntity, Long>{
 
-	 List<CalendarEntity> findBySelectedDate(LocalDate date);
-
+	List<CalendarEntity> findBySelectedDate(LocalDate date);
 	List<CalendarEntity> findBySelectedDateBetween(LocalDate startOfMonth, LocalDate endOfMonth);
 
 }
